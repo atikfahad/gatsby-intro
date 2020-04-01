@@ -2,6 +2,7 @@ import React from 'react';
 import { Global, css } from '@emotion/core';
 import Helmet from 'react-helmet';
 import Header from '../components/header';
+import Footer from '../components/footer';
 import useSiteMetadata from '../hooks/use-sitemetadata';
 const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();
@@ -67,6 +68,7 @@ const Layout = ({ children }) => {
       >
         {children}
       </main>
+      <Footer />
     </>
   );
 };
